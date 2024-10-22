@@ -1,2 +1,0 @@
-# DataVizualisation
-PRJ Data Science
