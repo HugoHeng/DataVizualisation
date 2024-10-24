@@ -39,6 +39,16 @@ st.markdown("""
     testing algorithms and continually learning.  
 """)
 
+with open("CV Hugo HENG.pdf", "rb") as file:
+    resume = file.read()
+
+st.download_button(
+    label = '📥 Download Resume',
+    data = resume,
+    file_name = "CV Hugo HENG.pdf",
+    mime="application/pdf"
+)
+
 st.header("Skills 🛠️", divider = True)
 col1, col2 = st.columns(2)
 with col1:
@@ -59,17 +69,17 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("### Project DVF 🏢")
     st.image('dvf.jpg')
-    st.markdown()
+    st.markdown('This project aimed to predict the price of real estate')
     st.markdown('To see more : [Project DVF](https://github.com/HugoHeng/prj_data_science/settings/access?guidance_task=)')
 with col2:
     st.markdown("### Project about Brevet 📜")
     st.image('brevet-innovation.jpg')
-    st.markdown()
-    st.markdown('To see more  : [Project Brevet]()')
+    st.markdown('This project aimed to classify a Brevet depending of the type')
+    st.markdown('To see more  : [Project EXPLAIN]()')
 with col3:
     st.markdown("### Project of Vizualisation 🏫")
     st.image('ecole-lamartine.jpg')
-    st.markdown()
+    st.markdown('This project aimed to visualize Data from student')
     st.markdown('To see more  : [Project DataViz](http://localhost:8501/Dashboard)')
 
 st.header("Timeline of my project", divider = True)

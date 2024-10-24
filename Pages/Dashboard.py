@@ -68,7 +68,7 @@ with st.sidebar:
     class_select = st.sidebar.multiselect('Select classes', ['Eleve Maternelle Total','Eleve de CP', 'Eleve de CE1', 'Eleve de CE2', 'Eleve de CM1', 'Eleve de CM2'], default = ['Eleve de CP'])
 
 st.header("📊 **_Dashboard of the effective of students in a class (2019 - 2023)_**", divider = True)
-
+st.dataframe(data)
 # Choropleth for France
 
 for feature in geojson_dep['features']:
